@@ -1,0 +1,12 @@
+﻿Sistema Event Driven su architettura scriptable object.
+Il tutto si basa sul concetto di wrappare un metodo dietro uno scriptable object 
+che in realtà e un semplice evento.
+Si usa la classe event listener per wrappare un metodo dentro lo scriptable object peculiare
+del nostro evento.
+
+1) creo un nuovo scriptable object event peculiare.
+2) lo nomino in modo significativo in modo che richiami l'azione che deve compiere.
+3) metto lo script Listener su un oggetto in scena che mi servirà come inizializzatore e da wrapper
+attraverso l'utilizzo degli unity event. possiamo mettere n listener dentro questo gameobject.
+4)Creo la reference come GameEvent nello script dove lo utilizzero.
+5)Dove farò il check di attivazione del mio evento chiamerò il Raise().
